@@ -1,0 +1,137 @@
+@media screen and (max-width: 1240px) {
+    .navbar {
+        padding: 0 1.1rem;
+    }
+
+    .logo img {
+        height: 4rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        text-align: left;
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a, 
+    .submenu .dropdown-content .submenu-item {
+        width: 100%;
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-links .active {
+        border-bottom: none;
+    }
+
+    .submenu:hover ul {
+        display: block;
+        position: static;
+        width: 100%;
+        background-color: #edeeed;
+    }
+
+    .submenu ul li,
+    .dropdown-content>.submenu-item,
+    .sub-dropdown>a {
+        width: auto;
+        border-bottom: none;
+        padding-bottom: 0.5rem;
+    }
+
+    .dropdown-content:hover .sub-dropdown {
+        position: static;
+        width: 100%;
+    }
+
+    .sub-dropdown {
+        background-color: #e3e5e3;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .upper-nav-banner {
+        display: none;
+    }
+}
+
+/* ==================== Tablet Screen ==================== */
+
+@media screen and (max-width: 768px) {
+    .swiper-nav-btn {
+        visibility: hidden;
+    }
+
+    .swiper-pagination-bullet {
+        visibility: visible;
+    }
+
+    /* Footer Section */
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 1.25rem;
+    }
+
+    .footer-btm {
+        font-size: 0.85rem;
+    }
+}
+
+/* ==================== Mobile Screen ==================== */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        --side-padding: 2rem;
+    }
+
+    /* Carousel Section */
+    
+    .slider-data {
+        padding: 0.85rem;
+    }
+
+    .slider-data h2 {
+        font-size: 1.85rem;
+    }
+
+    .slider-data p {
+        width: 100%;
+    }
+
+    /* Nav-item Image Banner */
+
+    .banner-img,
+    .banner-content {
+        --banner-img-height: 200px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-nav a {
+        font-size: 0.85rem;
+    }
+}
