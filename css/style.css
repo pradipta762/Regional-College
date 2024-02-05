@@ -546,7 +546,6 @@ svg {
 
 .list-items ul li {
     display: flex;
-    align-items: center;
 }
 
 .list-items i {
