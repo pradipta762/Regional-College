@@ -78,6 +78,11 @@
 /* ==================== Tablet Screen ==================== */
 
 @media screen and (max-width: 768px) {
+
+    body {
+        --side-padding: 3rem;
+    }
+
     .swiper-nav-btn {
         visibility: hidden;
     }

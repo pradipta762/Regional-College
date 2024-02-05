@@ -496,7 +496,7 @@ svg {
     color: rgb(119, 114, 114);
 }
 
-/* ==================== Admission Procedure Section ==================== */
+/* ==================== Admission Procedure & Facility Section ==================== */
 
 .site-content {
     padding: 100px 0;
@@ -511,14 +511,14 @@ svg {
     margin-bottom: 1.5rem;
 }
 
-.heading h3 {
+.heading h3, .item-heading h3 {
     font-size: 2rem;
     font-weight: 600;
     position: relative;
     color: var(--primary-color);
 }
 
-.heading h3::before {
+.item-heading h3::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -529,7 +529,7 @@ svg {
     background-color: var(--accecnt-color);
 }
 
-.heading h3::after {
+.item-heading h3::after {
     content: "";
     position: absolute;
     top: 105%;
@@ -539,22 +539,37 @@ svg {
     background-color: var(--secondary-color);
 }
 
-.procedure ul {
+.list-items ul {
     list-style: none;
     line-height: 1.8;
 }
 
-.procedure i {
-    font-size: 1.375rem;
+.list-items ul li {
+    display: flex;
+    align-items: center;
 }
 
-.procedure .procedure-list {
+.list-items i {
+    position: relative;
+    top: 4px;
+    font-size: 1.5625rem;
+}
+
+.list-items .list {
     margin-left: 2px;
     font-size: 1rem;
 }
 
 .procedure-list a {
     color: blue;
+}
+
+.bx-chevrons-right {
+    color: var(--accecnt-color);
+}
+
+.list-items {
+    margin-bottom: 1rem;
 }
 
 /* ======================= Footer section start =================== */
