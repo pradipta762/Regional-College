@@ -91,6 +91,10 @@
         visibility: visible;
     }
 
+    .grid-two-column {
+        grid-template-columns: 1fr;
+    }
+
     /* Footer Section */
 
     .footer {

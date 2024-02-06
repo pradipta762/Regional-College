@@ -75,10 +75,19 @@ svg {
     display: block;
 }
 
+/* ========== Utility Classes ========== */
+
 .container {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+.content-wrapper {
+    padding: 50px 0;
+}
 
 .btn {
     display: inline-block;
@@ -89,6 +98,35 @@ svg {
     text-decoration: none;
     color: var(--bg-color);
     transition: all 0.3s ease;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.heading h2::before,
+.heading h2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.heading h2::before {
+    height: 5px;
+    width: 10px;
+    background-color: var(--accecnt-color);
+}
+
+.heading h2::after {
+    height: 5px;
+    width: 160px;
+    background-color: var(--secondary-color);
+    left: 15px;
 }
 
 /* ======================= Upper nav bar start =================== */
@@ -388,6 +426,7 @@ svg {
 .slider-btn.inverse-btn {
     border: 3px solid var(--bg-color);
     background-color: transparent;
+    color: var(--bg-color);
     padding: 0.5rem 1.2rem;
 }
 
@@ -438,6 +477,49 @@ svg {
 
 /* ======================= Carousel section end =================== */
 
+/* ======================= About Us Section Start ======================= */
+
+.inverse-btn {
+    background: transparent;
+    border: 3px solid var(--accecnt-color);
+    color: var(--accecnt-color);
+}
+
+.inverse-btn:hover {
+    background: var(--accecnt-color);
+    color: var(--bg-color);
+}
+
+.grid-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    height: auto;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-content {
+    max-width: 650px;
+}
+
+.grid-content p {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* ======================= About Us Section End ======================= */
 
 /* ======================= Nav-item Banner Styling Start =================== */
 
@@ -499,12 +581,7 @@ svg {
 /* ==================== Admission Procedure & Facility Section ==================== */
 
 .site-content {
-    padding: 100px 0;
     background-color: var(--bg-color);
-}
-
-.site-wrapper {
-    padding: 0 var(--side-padding);
 }
 
 .heading {
