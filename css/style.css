@@ -521,6 +521,45 @@ svg {
 
 /* ======================= About Us Section End ======================= */
 
+/* ======================= Couse Section Start ======================= */
+
+.course-card {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.course-card .img-container,
+.course-card .img-container img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.course-card .grid-content {
+    padding: 1rem;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.course-card p {
+    --text-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+    font-size: 0.85rem;
+}
+
+.btn-secondary {
+    border: none;
+    background: transparent;
+    color: var(--accecnt-color);
+    margin-left: 0.5rem;
+    text-decoration: underline;
+}
+
+/* ======================= Couse Section End ======================= */
+
 /* ======================= Nav-item Banner Styling Start =================== */
 
 .banner-wrapper {
