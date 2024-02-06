@@ -477,7 +477,7 @@ svg {
 
 /* ======================= Carousel section end =================== */
 
-/* ======================= About Us Section Start ======================= */
+/* ======================= About Us & Academic Program Section Start ======================= */
 
 .inverse-btn {
     background: transparent;
@@ -519,7 +519,9 @@ svg {
     color: var(--text-color);
 }
 
-/* ======================= About Us Section End ======================= */
+/* ======================= About Us & Academic Program Section End ======================= */
+
+
 
 /* ======================= Couse Section Start ======================= */
 
@@ -530,8 +532,7 @@ svg {
 
 .course-card .img-container,
 .course-card .img-container img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .course-card .grid-content {
@@ -559,6 +560,69 @@ svg {
 }
 
 /* ======================= Couse Section End ======================= */
+
+
+/* ======================= Gallery Section Start ======================= */
+
+.heading-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-center h2 {
+    width: auto;
+    text-align: center;
+}
+
+.heading-center h2::after {
+    height: 5px;
+    width: 225px;
+    background-color: var(--secondary-color);
+    left: 15px;
+}
+
+.heading-center h2::before {
+    height: 5px;
+    width: 10px;
+    background-color: var(--accecnt-color);
+    left: 0;
+}
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 1.25rem;
+    padding: 1.25rem;
+}
+
+.video {
+    grid-column: 1 / 2;
+    margin-bottom: 1.25rem;
+}
+
+.image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 0.625rem;
+}
+
+.image {
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    grid-column: 2 / 3;
+}
+
+.gallery-wrapper .inverse-btn {
+    margin-top: 1rem;
+}
+
+/* ======================= Gallery Section End ======================= */
 
 /* ======================= Nav-item Banner Styling Start =================== */
 

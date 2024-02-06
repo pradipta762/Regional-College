@@ -91,7 +91,8 @@
         visibility: visible;
     }
 
-    .grid-two-column {
+    .grid-two-column,
+    .gallery-wrapper {
         grid-template-columns: 1fr;
     }
 
