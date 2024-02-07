@@ -60,6 +60,7 @@ body {
 body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: var(--bg-color);
 }
 
 /* A elements that don't have a class get default styles */
@@ -127,6 +128,13 @@ svg {
     width: 160px;
     background-color: var(--secondary-color);
     left: 15px;
+}
+
+
+.course-section,
+.counter-section {
+    --bg-color: #fff;
+    background-color: var(--bg-color);
 }
 
 /* ======================= Upper nav bar start =================== */
@@ -623,6 +631,50 @@ svg {
 }
 
 /* ======================= Gallery Section End ======================= */
+
+
+/* ======================= Counter Section Start ======================= */
+
+.counter-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.counter-item {
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.counter-item i {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.counter-item h3 {
+    --secondary-color: #c8c209;
+    color: var(--secondary-color);
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.counter-section h2::after {
+    width: 190px;
+}
+
+.counter-item p {
+    color: var(--accecnt-color);
+}
+
+/* ======================= Counter Section End ======================= */
+
 
 /* ======================= Nav-item Banner Styling Start =================== */
 
