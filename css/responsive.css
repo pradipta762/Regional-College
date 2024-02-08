@@ -95,6 +95,10 @@
     .gallery-wrapper {
         grid-template-columns: 1fr;
     }
+    
+    .testimonial-content {
+        padding: 2rem;
+    }
 
     /* Footer Section */
 

@@ -676,6 +676,63 @@ svg {
 /* ======================= Counter Section End ======================= */
 
 
+/* ======================= Testimonial Section Start ======================= */
+
+.testimonial-section {
+    background-color: #fff75ed4;
+}
+
+.testimonial-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    text-align: center;
+}
+
+.testimonial-img img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-img,
+.testimonial-details .testi-message,
+.testimonial-details i {
+    margin-bottom: 1rem;
+}
+
+.testimonial-details i {
+    color: var(--accecnt-color);
+    font-size: 1.5rem;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.job {
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.testimonial-section .swiper-nav-btn {
+    background-color: transparent;
+}
+
+.testimonial-section .swiper-nav-btn::before,
+.testimonial-section .swiper-nav-btn::after {
+    color: var(--accecnt-color);
+    font-weight: 600;
+}
+
+/* ======================= Testimonial Section End ======================= */
+
+
 /* ======================= Nav-item Banner Styling Start =================== */
 
 .banner-wrapper {
