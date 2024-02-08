@@ -231,7 +231,8 @@ svg {
     margin-right: 10px;
 }
 
-.login-section a, .nav-social-links a i {
+.login-section a,
+.nav-social-links a i {
     color: var(--text-color);
     /* color: var(--bg-color); */
 }
@@ -678,8 +679,17 @@ svg {
 
 /* ======================= Testimonial Section Start ======================= */
 
-.testimonial-section {
+/* .testimonial-section {
     background-color: #fff75ed4;
+} */
+
+.testimonial-section h2::before {
+    width: 35px;
+}
+
+.testimonial-section h2::after {
+    left: 40px;
+    width: 380px;
 }
 
 .testimonial-content {
@@ -718,6 +728,7 @@ svg {
 .job {
     font-weight: 400;
     font-size: 0.85rem;
+    margin-bottom: 0.5rem;
 }
 
 .testimonial-section .swiper-nav-btn {
@@ -739,14 +750,14 @@ svg {
     width: 100%;
 }
 
-.banner-img{
+.banner-img {
     height: var(--banner-img-height);
     width: 100%;
     position: relative;
     /* border: 1px solid black; */
 }
 
-.banner-img img{
+.banner-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -765,7 +776,7 @@ svg {
     /* border: 1px solid black; */
 }
 
-.banner-content h1{
+.banner-content h1 {
     font-size: 2.4rem;
     font-weight: 500;
     margin-bottom: 0.2rem;
@@ -782,11 +793,12 @@ svg {
     color: var(--bg-color);
 }
 
-.banner-nav a:hover{
+.banner-nav a:hover {
     text-decoration: underline;
 }
 
-.banner-nav .banner-nav-prev, .banner-nav i {
+.banner-nav .banner-nav-prev,
+.banner-nav i {
     color: rgb(119, 114, 114);
 }
 
@@ -800,7 +812,8 @@ svg {
     margin-bottom: 1.5rem;
 }
 
-.heading h3, .item-heading h3 {
+.heading h3,
+.item-heading h3 {
     font-size: 2rem;
     font-weight: 600;
     position: relative;
@@ -885,7 +898,8 @@ svg {
     object-fit: cover;
 }
 
-.card-img, .card-img img {
+.card-img,
+.card-img img {
     border-radius: 10px 10px 0 0;
 }
 
@@ -967,7 +981,8 @@ svg {
     margin-right: 0.3rem;
 }
 
-.footer-col ul li a, .location {
+.footer-col ul li a,
+.location {
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 0.3rem;
     font-size: 1rem;
@@ -1009,7 +1024,7 @@ svg {
 .map-container {
     position: relative;
     overflow: hidden;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
 }
 
 .map-container iframe {
