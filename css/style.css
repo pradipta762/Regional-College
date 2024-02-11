@@ -94,7 +94,7 @@ svg {
     display: inline-block;
     padding: 0.65rem 1.2rem;
     background-color: var(--accecnt-color);
-    margin: 5px;
+    margin: 5px 5px 0 0;
     border-radius: 5px;
     text-decoration: none;
     color: var(--bg-color);
@@ -130,9 +130,9 @@ svg {
     left: 15px;
 }
 
-
 .course-section,
-.counter-section {
+.counter-section,
+.enquiry-form-section {
     --bg-color: #fff;
     background-color: var(--bg-color);
 }
@@ -743,6 +743,69 @@ svg {
 
 /* ======================= Testimonial Section End ======================= */
 
+
+/* ======================= Enquiry Form Section Start ======================= */
+
+.form-column {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-column h2 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 0.9375rem;
+}
+
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+
+.name-group .form-group {
+    flex: 1;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid var(--secondary-color);
+}
+
+.form-group textarea {
+    height: 7rem;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ======================= Enquiry Form Section End ======================= */
 
 /* ======================= Nav-item Banner Styling Start =================== */
 
