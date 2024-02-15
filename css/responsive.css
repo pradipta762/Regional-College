@@ -73,6 +73,11 @@
     .upper-nav-banner {
         display: none;
     }
+
+    .cta-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* ==================== Tablet Screen ==================== */
@@ -98,6 +103,10 @@
     
     .testimonial-content {
         padding: 2rem;
+    }
+
+    .form-column {
+        width: 90%;
     }
 
     /* Footer Section */
@@ -132,6 +141,10 @@
 
     .slider-data p {
         width: 100%;
+    }
+
+    .name-group {
+        flex-direction: column;
     }
 
     /* Nav-item Image Banner */
