@@ -330,7 +330,7 @@ svg {
     color: var(--text-color);
     text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .nav-links .nav-item:hover {
