@@ -113,6 +113,9 @@ svg {
     background: transparent;
     color: var(--accecnt-color);
     margin-left: 0.5rem;
+}
+
+.btn-secondary:hover {
     text-decoration: underline;
 }
 
@@ -1172,7 +1175,7 @@ input::placeholder {
     color: rgb(119, 114, 114);
 }
 
-/* ==================== Admission Procedure & Facility Section ==================== */
+/* ==================== Admission Procedure & Facility Section Start ==================== */
 
 .site-content {
     background-color: var(--bg-color);
@@ -1289,3 +1292,51 @@ input::placeholder {
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 0.85rem;
 }
+
+/* ==================== Admission Procedure & Facility Section End ==================== */
+
+
+/* =============== Admission Commiittee Section Start =============== */
+.admission-committee-section {
+    background: url(../img/bg-1.jpg);
+    background-position: bottom;
+}
+
+.profile {
+    --bg-color: #fff;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    margin-top: 1rem;
+}
+
+.profile-details h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.profile-details p {
+    --text-color: rgba(0, 0, 0, 0.7);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.profile-contact {
+    --text-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+}
+
+.profile-contact i {
+    color: var(--accecnt-color);
+    margin-right: 0.25rem;
+}
+
+/* =============== Admission Commiittee Section End =============== */
