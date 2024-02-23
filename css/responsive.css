@@ -1,5 +1,6 @@
 @media screen and (max-width: 1240px) {
     .navbar {
+        height: 64px;
         padding: 0 1.1rem;
     }
 
@@ -19,6 +20,12 @@
         padding: 1rem 1.5rem;
     }
 
+    .nav-item,
+    .submenu .nav-item {
+        height: 35px;
+        line-height: 35px;
+    }
+
     .nav-links.show {
         display: flex;
     }
@@ -34,6 +41,10 @@
 
     .nav-links .active {
         border-bottom: none;
+    }
+
+    .submenu ul {
+        border-top: none;
     }
 
     .submenu:hover ul {
