@@ -78,7 +78,9 @@ svg {
     display: block;
 }
 
-/* ========== Utility Classes Start ========== */
+/* ----------------------------------------------
+        ## Global CSS Start
+---------------------------------------------- */
 
 .container {
     max-width: 1200px;
@@ -185,10 +187,14 @@ svg {
     padding: 1.5rem;
 }
 
-/* ========== Utility Classes End ========== */
+/* ----------------------------------------------
+        ## Global CSS End
+---------------------------------------------- */
 
 
-/* ======================= Upper nav bar start =================== */
+/* ----------------------------------------------
+        ## Upper Nav bar Start
+---------------------------------------------- */
 .upper-nav-banner {
     --secondary-color: #faf100;
     background-color: var(--secondary-color);
@@ -305,9 +311,13 @@ svg {
     font-size: 1.1rem;
 }
 
-/* ======================= Upper nav bar end =================== */
+/* ----------------------------------------------
+        ## Upper Nav bar End
+---------------------------------------------- */
 
-/* ======================= nav bar start =================== */
+/* ----------------------------------------------
+        ## Nav bar Start
+---------------------------------------------- */
 
 .navbar {
     display: flex;
@@ -431,9 +441,13 @@ svg {
     border-radius: 30px;
 }
 
-/* ======================= nav bar end =================== */
+/* ----------------------------------------------
+        ## Nav bar End
+---------------------------------------------- */
 
-/* ======================= Carousel Section start =================== */
+/* ----------------------------------------------
+        ## Carousel Section Start
+---------------------------------------------- */
 
 .main {
     height: 80vh;
@@ -538,9 +552,14 @@ svg {
     background-color: var(--accecnt-color);
 }
 
-/* ======================= Carousel section end =================== */
+/* ----------------------------------------------
+        ## Carousel Section End
+---------------------------------------------- */
 
-/* ======================= About Us & Academic Program Section Start ======================= */
+
+/* --------------------------------------------------------
+        ## About Us & Academic Program Section Start
+-------------------------------------------------------- */
 
 .grid-content {
     max-width: 650px;
@@ -606,11 +625,14 @@ svg {
     background-color: #fe7fb6;
 }
 
-/* ======================= About Us & Academic Program Section End ======================= */
+/* --------------------------------------------------------
+        ## About Us & Academic Program Section End
+-------------------------------------------------------- */
 
 
-
-/* ======================= Couse Section Start ======================= */
+/* ----------------------------------------------
+        ## Course Section Start
+---------------------------------------------- */
 .course-card {
     --bg-color: #fff;
     background-color: var(--bg-color);
@@ -639,11 +661,14 @@ svg {
     font-size: 0.85rem;
 }
 
+/* ----------------------------------------------
+        ## Course Section End
+---------------------------------------------- */
 
-/* ======================= Couse Section End ======================= */
 
-
-/* ======================= Notice Section Start ======================= */
+/* ----------------------------------------------
+        ## Notice Section Start
+---------------------------------------------- */
 
 .grid-item h4 {
     font-size: 1.25rem;
@@ -730,10 +755,14 @@ svg {
 }
 
 
-/* ======================= Notice Section Start ======================= */
+/* ----------------------------------------------
+        ## Notice Section End
+---------------------------------------------- */
 
 
-/* ======================= Counter Section Start ======================= */
+/* ----------------------------------------------
+        ## Counter Section Start
+---------------------------------------------- */
 
 .counter-section,
 .course-section {
@@ -785,10 +814,14 @@ svg {
     font-weight: 600;
 }
 
-/* ======================= Counter Section End ======================= */
+/* ----------------------------------------------
+        ## Counter Section End
+---------------------------------------------- */
 
 
-/* ======================= Testimonial Section Start ======================= */
+/* ----------------------------------------------
+        ## Testimonial Section Start
+---------------------------------------------- */
 
 .testimonial-section {
     margin-top: 1.5rem;
@@ -845,10 +878,14 @@ svg {
     font-weight: 600;
 }
 
-/* ======================= Testimonial Section End ======================= */
+/* ----------------------------------------------
+        ## Testimonial Section End
+---------------------------------------------- */
 
 
-/* ======================= cta section start ======================= */
+/* ----------------------------------------------
+        ## CTA Section Start
+---------------------------------------------- */
 
 .cta-wrapper {
     background-color: var(--primary-color);
@@ -871,9 +908,13 @@ svg {
     font-weight: 700;
 }
 
-/* ======================= cta section end ======================= */
+/* ----------------------------------------------
+        ## CTA Section End
+---------------------------------------------- */
 
-/* ======================= Enquiry Form Start ======================= */
+/* ----------------------------------------------
+        ## Enquiry Form Start
+---------------------------------------------- */
 
 .form-section {
     display: none;
@@ -978,11 +1019,15 @@ input::placeholder {
     cursor: pointer;
 }
 
-/* ======================= Enquiry Form End ======================= */
+/* ----------------------------------------------
+        ## Enquiry Form End
+---------------------------------------------- */
 
 
 
-/* ======================= Footer section start =================== */
+/* ----------------------------------------------
+        ## Footer Section Start
+---------------------------------------------- */
 
 .footer {
     display: grid;
@@ -990,6 +1035,24 @@ input::placeholder {
     background-color: #f6f7fb;
     color: var(--text-color);
     padding: 20px var(--side-padding);
+    background-image: url(../img/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.96;
+    z-index: -1;
 }
 
 .footer-col {
@@ -1113,11 +1176,15 @@ input::placeholder {
     font-weight: bold;
 }
 
-/* ======================= Footer section end =================== */
+/* ----------------------------------------------
+        ## Footer Section End
+---------------------------------------------- */
 
 
 
-/* ======================= Nav-item Banner Styling Start =================== */
+/* ----------------------------------------------
+        ## Nav-item Banner Styling Start
+---------------------------------------------- */
 
 .banner-wrapper {
     width: 100%;
@@ -1175,7 +1242,13 @@ input::placeholder {
     color: rgb(119, 114, 114);
 }
 
-/* ==================== Admission Procedure & Facility Section Start ==================== */
+/* -------------------------------------------------------- 
+        ## Nav-item Banner Styling End
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------- 
+        ## Admission Procedure & Facility Section Start 
+-------------------------------------------------------- */
 
 .site-content {
     background-color: var(--bg-color);
@@ -1293,10 +1366,15 @@ input::placeholder {
     margin-bottom: 0.85rem;
 }
 
-/* ==================== Admission Procedure & Facility Section End ==================== */
+/* -------------------------------------------------------- 
+        ## Admission Procedure & Facility Section End 
+-------------------------------------------------------- */
 
 
-/* =============== Admission Commiittee Section Start =============== */
+/* ---------------------------------------------- 
+        ## Admission Commiittee Section Start 
+---------------------------------------------- */
+
 .admission-committee-section {
     background: url(../img/nav-item-bg.jpg);
     background-position: bottom;
@@ -1339,4 +1417,196 @@ input::placeholder {
     margin-right: 0.25rem;
 }
 
-/* =============== Admission Commiittee Section End =============== */
+/* ---------------------------------------------- 
+        ## Admission Commiittee Section End 
+---------------------------------------------- */
+
+
+/* ------------------------------------------ 
+        ## Contact Section Start 
+------------------------------------------ */
+
+.contact-section {
+    background-color: var(--bg-color);
+}
+
+.contact-top {
+    align-items: start;
+}
+
+.contact-top p {
+    margin-bottom: 1rem;
+}
+
+.hours-heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+}
+
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.day-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.day {
+    font-size: 1.25rem;
+}
+
+.time {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 300px;
+    align-items: start;
+    margin-top: 0.5rem;
+}
+
+.social-media i {
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.facebook,
+.instagram,
+.twitter,
+.youtube {
+    display: flex;
+    gap: 1rem;
+}
+
+.facebook a:hover,
+.instagram a:hover,
+.twitter a:hover,
+.youtube a:hover {
+    text-decoration: underline;
+}
+
+.contact-link {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 10px var(--black-100);
+    background-color: #e9f3ff;
+}
+
+.contact-link i {
+    font-size: 1.25rem;
+    height: 55px;
+    width: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #80baff;
+    color: #fff;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.sm-heading {
+    color: var(--black-500);
+    font-size: 0.85rem;
+}
+
+/* ------------------------------------------ 
+        ## Contact Section End 
+------------------------------------------ */
+
+
+/* ------------------------------------------ 
+        ## The Institute Section Start 
+------------------------------------------ */
+
+.the-institute-section .img-container img {
+    border-radius: 10px;
+}
+
+.clg-about .heading h4 {
+    position: relative;
+}
+
+.clg-about .heading h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: var(--accecnt-color);
+    top: 100%;
+    left: 0;
+}
+
+.the-institute-mid-section {
+    background-image: url(../img/the-institute-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.the-institute-mid-section::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    opacity: 0.812;
+}
+
+.the-institute-mid-section .heading h4 {
+    font-size: 1.5rem;
+    color: var(--bg-color);
+}
+
+.institute-card {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+.clg-about .grid-item .institute-card p {
+    color: var(--bg-color);
+}
+
+.the-institute-btm-section .grid-two-column:last-child {
+    margin-top: 2.5rem;
+}
+
+/* ------------------------------------------ 
+        ## The Institute Section End 
+------------------------------------------ */
