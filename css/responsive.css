@@ -101,6 +101,15 @@
         --side-padding: 3rem;
     }
 
+    .slide .slider-data {
+        padding: 0;
+        left: 1rem;
+    }
+
+    .slider-data p {
+        width: 90%;
+    }
+
     .swiper-nav-btn {
         visibility: hidden;
     }
@@ -176,13 +185,22 @@
     }
 
     /* Carousel Section */
+
+    .main {
+        height: 70vh;
+    }
+
+    .slide .slider-img {
+        object-position: 80% 20%;
+    }
     
-    .slider-data {
-        padding: 0.85rem;
+    .slide .slider-data {
+        padding: 0;
+        left: 0.625rem;
     }
 
     .slider-data h2 {
-        font-size: 1.85rem;
+        font-size: 2.5rem;
     }
 
     .slider-data p {

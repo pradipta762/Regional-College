@@ -413,7 +413,7 @@ svg {
 ---------------------------------------------- */
 
 .main {
-    height: 80vh;
+    height: 85vh;
     width: 100%;
 }
 
@@ -427,7 +427,14 @@ svg {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    object-position: 50% 30%;
+    position: relative;
+}
+
+.dark-overlay {
+    background: linear-gradient(260deg, rgba(19, 24, 28, 0.25) 10%, var(--black-900) 90%);
+    position: absolute;
+    inset: 0;
 }
 
 .slide .slider-data {
@@ -436,10 +443,10 @@ svg {
     color: var(--bg-color);
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 0 1.5rem;
+    transform: translateY(-50%);
+    left: 0;
+    text-align: left;
+    padding: 0 2rem;
 }
 
 .slider-data h2 {
@@ -450,17 +457,18 @@ svg {
 
 .slider-data p {
     font-size: 1rem;
-    width: 56%;
-    margin: 0 auto 1rem auto;
+    margin-bottom: 1rem;
+    width: 60ch;
 }
 
 .btn.slider-btn {
     background-color: var(--accecnt-color);
     color: var(--bg-color);
+    margin-right: 10px;
 }
 
 .btn.slider-btn:hover {
-    opacity: 0.8;
+    background-color: #a4112e;
 }
 
 .slider-btn.inverse-btn {
@@ -481,19 +489,26 @@ svg {
     height: 3.125rem;
     width: 3.125rem;
     border-radius: 50%;
-    background-color: #faf20035;
+    border: 1px solid var(--bg-color);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.main:hover .swiper-nav-btn {
+    opacity: 1;
 }
 
 .swiper-button-prev {
-    left: 40px;
+    left: 35px;
 }
 
 .swiper-button-next {
-    right: 40px;
+    right: 35px;
 }
 
 .swiper-nav-btn:hover {
-    background-color: #faf20068;
+    background-color: var(--accecnt-color);
+    border-color: var(--accecnt-color);
 }
 
 .swiper-nav-btn::before,
@@ -830,6 +845,8 @@ svg {
 
 .testimonial-section .swiper-nav-btn {
     background-color: transparent;
+    border-color: transparent;
+    opacity: 1;
 }
 
 .testimonial-section .swiper-nav-btn::before,
