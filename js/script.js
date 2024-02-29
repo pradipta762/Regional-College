@@ -48,29 +48,33 @@ popupForm.addEventListener("click", () => {
 });
 
 
-
 // Counter Section
-function animateCounters() {
-    const counters = document.querySelectorAll('.count');
-    const speed = 2000; // Adjust animation speed (lower is faster)
 
-    counters.forEach(counter => {
-        const target = +counter.innerText;
-        const updateCount = () => {
-            const count = +counter.innerText;
-            const inc = target / speed;
-            if (count < target) {
-                counter.innerText = Math.ceil(count + inc);
-                setTimeout(updateCount, 1);
-            } else {
-                counter.innerText = target;
+function animateCounters() {
+    const counter = document.querySelectorAll(".count");
+    let speed = 50;
+
+    counter.forEach((countVal) => {
+        let initVal = +countVal.textContent;
+        let targetVal = countVal.dataset.val;
+        let countSpeed = Math.floor(targetVal / speed);
+
+        const updateCounter = () => {
+            initVal += countSpeed;
+            countVal.textContent = initVal;
+
+            if (initVal < targetVal) {
+                setTimeout(() => {
+                    updateCounter();
+                }, 10)
             }
-        };
-        updateCount();
+        }
+        updateCounter();
     });
 }
 
-// Trigger counter animation when element is in viewport
+
+// Trigger counter when it is in the view portt
 document.addEventListener('DOMContentLoaded', () => {
     const counterSection = document.querySelector('.counter-section');
     const options = {

@@ -400,8 +400,19 @@ svg {
     width: 30px;
     height: 4px;
     background-color: var(--primary-color);
-    margin: 3px 0;
-    border-radius: 30px;
+    margin: 2.5px 0;
+    /* border-radius: 10px; */
+    
+}
+
+.bar:nth-child(2) {
+    width: 22px;
+    margin-left: 8px;
+}
+
+.bar:nth-child(3) {
+    width: 15px;
+    margin-left: 15px;
 }
 
 /* ----------------------------------------------
@@ -615,7 +626,7 @@ svg {
     --bg-color: #fff;
     background-color: var(--bg-color);
     border-radius: 10px;
-    box-shadow: var(--black-100) 0px 4px 6px -1px, var(--black-600) 0px 2px 4px -1px;
+    box-shadow: var(--black-100) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     padding: 1rem;
 }
 
@@ -930,6 +941,26 @@ svg {
     box-shadow: 0 0 15px var(--black-700);
 }
 
+.form-logo {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    opacity: 0.95;
+    z-index: -1;
+    border-radius: 10px;
+}
+
 .form-heading {
     display: flex;
     justify-content: space-between;
@@ -973,6 +1004,7 @@ svg {
     padding: 0.625rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: transparent;
     outline: none;
 }
 
