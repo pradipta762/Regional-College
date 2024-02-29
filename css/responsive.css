@@ -80,11 +80,13 @@
     }
 }
 
-@media screen and (max-width: 980px) {
-    .upper-nav-banner {
+@media screen and (max-width: 1035px) {
+    .nav-opening-hours {
         display: none;
     }
+}
 
+@media screen and (max-width: 980px) {
     .cta-wrapper {
         flex-wrap: wrap;
         justify-content: center;
@@ -132,12 +134,45 @@
     }
 }
 
+@media screen and (max-width: 650px) {
+    .upper-nav-bar::after {
+        width: 60%;
+    }
+
+    .nav-phn,
+    .signup {
+        display: none;
+    }
+}
+
 /* ==================== Mobile Screen ==================== */
 
 @media screen and (max-width: 480px) {
 
     body {
         --side-padding: 2rem;
+    }
+
+    .upper-nav-bar::after {
+        width: 58%;
+    }
+
+    .upper-nav-wrapper {
+        justify-content: center;
+    }
+
+    .nav-email {
+        display: none;
+    }
+
+    .upper-nav-right {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-login span,
+    .nav-login i {
+        color: var(--bg-color);
     }
 
     /* Carousel Section */
