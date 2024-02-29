@@ -1661,3 +1661,50 @@ input::placeholder {
 /* ------------------------------------------ 
         ## The Institute Section End 
 ------------------------------------------ */
+
+/* ------------------------------------------ 
+        ## Message Section Start 
+------------------------------------------ */
+
+.msg-container .grid-two-column {
+    align-items: start;
+}
+
+.grid-item .name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black-600);
+    text-align: center;
+    margin: 1rem;
+}
+
+.msg-details-wrapper {
+    margin-top: 0.85rem;
+}
+
+.msg-details {
+    text-align: center;
+}
+
+.msg-container .grid-content p,
+.message {
+    margin: 0.85rem 0;
+    line-height: 1.5;
+    color: var(--black-600);
+}
+
+.msg-details .role {
+    margin: 0.85rem 0;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.msg-quote {
+    font-size: 2.25rem;
+    color: var(--accecnt-color);
+}
+
+/* ------------------------------------------ 
+        ## Message Section End 
+------------------------------------------ */
