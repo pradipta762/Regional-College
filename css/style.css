@@ -293,7 +293,7 @@ svg {
 .nav-links {
     display: flex;
     gap: 1.5rem;
-    z-index: 10;
+    z-index: 1300;
 }
 
 .nav-links a {
@@ -1100,7 +1100,7 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-    transition: 0.3s all linear;
+    transition: 0.3s all ease;
 }
 
 .social-links a i:hover {
@@ -1130,6 +1130,7 @@ input::placeholder {
 .footer-col ul li a:hover {
     color: var(--text-color);
     text-decoration: underline;
+    transition: 0.3s all ease;
 }
 
 .footer-col h3 {
@@ -1384,7 +1385,7 @@ input::placeholder {
     grid-template-rows: 1fr auto;
     border: 1px solid var(--black-100);
     border-radius: 10px;
-    box-shadow: var(--black-100) 0px 20px 25px -5px, var(--black-400) 0px 10px 10px -5px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .card-img {
