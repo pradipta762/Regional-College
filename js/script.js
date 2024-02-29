@@ -90,3 +90,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }, options);
     observer.observe(counterSection);
 });
+
+
+// Scroll to top button
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const scrollToTopBtn = document.querySelector(".scroll-to-top");
+    const navSection = document.querySelector(".upper-nav-bar");
+
+    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+
+    scrollToTopBtn.addEventListener("click", () => {
+        navSection.scrollIntoView({ behavior: "smooth" });
+    });
+}

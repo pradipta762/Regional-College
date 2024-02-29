@@ -1191,6 +1191,50 @@ input::placeholder {
         ## Footer Section End
 ---------------------------------------------- */
 
+/* ----------------------------------------------
+        ## Scroll to top Section Start
+---------------------------------------------- */
+
+.scroll-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1200;
+    display: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+.scroll-top {
+    height: 3.25rem;
+    width: 3.25rem;
+    border-radius: 50%;
+    background-color: var(--accecnt-color);
+    color: var(--bg-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------------
+        ## Scroll to top Section End
+---------------------------------------------- */
 
 
 /* ----------------------------------------------
