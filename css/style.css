@@ -26,6 +26,16 @@
     --nav-height: 88px;
 }
 
+::-moz-selection {
+    color: var(--bg-color);
+    background: var(--primary-color);
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--primary-color);
+}
+
 * {
     margin: 0;
     padding: 0;
