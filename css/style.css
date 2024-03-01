@@ -125,10 +125,12 @@ svg {
     background: transparent;
     color: var(--accecnt-color);
     margin-left: 0.5rem;
+    transition: 0.3s all ease;
 }
 
 .btn-secondary:hover {
     text-decoration: underline;
+    transition: 0.3s all ease;
 }
 
 .heading h2 {
@@ -1012,6 +1014,7 @@ input::placeholder {
 .form-group input:focus,
 .form-group textarea:focus {
     border: 1px solid var(--secondary-color);
+    outline:1px solid var(--secondary-color);
 }
 
 .form-group textarea {
