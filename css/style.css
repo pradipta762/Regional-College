@@ -1430,6 +1430,13 @@ input::placeholder {
     margin-bottom: 0.85rem;
 }
 
+.card-content a {
+    color: #9e7eff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 /* -------------------------------------------------------- 
         ## Admission Procedure & Facility Section End 
 -------------------------------------------------------- */
