@@ -23,7 +23,7 @@
     --upper-nav-ff: Arial, Helvetica, sans-serif;
     --side-padding: 5rem;
     --banner-img-height: 295px;
-    --nav-height: 88px;
+    --nav-height: 80px;
 }
 
 ::-moz-selection {
@@ -286,122 +286,97 @@ svg {
 
 .navbar {
     height: var(--nav-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
     background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 0 var(--side-padding);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-shadow: var(--black-100) 0px 10px 15px -3px, var(--black-500) 0px 4px 6px -2px;
+    position: relative;
 }
 
 .logo img {
-    height: 5.5rem;
+    height: 5rem;
+    position: relative;
+    left: -10px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-links {
     display: flex;
     gap: 1.5rem;
+    background-color: var(--bg-color);
     z-index: 1300;
 }
 
-.nav-links a {
+.nav-item,
+.dropdown-btn {
     color: var(--text-color);
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
-}
-
-.nav-item, 
-.submenu .nav-item {
     height: var(--nav-height);
     line-height: var(--nav-height);
 }
 
-.nav-links .nav-item:hover {
+.dropdown-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.active,
+.nav-item:hover,
+.dropdown-btn:hover,
+.dropdown-content ul li:hover .dropdown-item {
     color: var(--accecnt-color);
 }
 
-.nav-links .active {
-    color: var(--accecnt-color);
-}
-
-.submenu {
+.dropdown {
     position: relative;
 }
 
-.submenu ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: max-content;
+.dropdown-content {
     display: none;
+    position: absolute;
+    z-index: 99;
     background-color: var(--bg-color);
-    background-color: var(--bg-color);
+    border-top: 2px solid var(--secondary-color);
+    min-width: 160px;
+}
+
+.dropdown-content li {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 20;
-    border-top: 3px solid var(--secondary-color);
-}
-
-.submenu:hover ul {
-    display: block;
-}
-
-.submenu ul li,
-.dropdown-content>a,
-.sub-dropdown>a {
-    padding: 1rem;
+    padding: 1rem 0;
     white-space: nowrap;
     border-bottom: 1px solid var(--black-100);
 }
 
-.submenu ul li:last-child {
+.dropdown-content li:last-child {
     border-bottom: none;
 }
 
-.submenu ul li a,
-.dropdown-content>a,
-.sub-dropdown>a {
+.dropdown-content li a {
+    width: 100%;
+    padding: 0 0.85rem;
     font-size: 0.9rem;
-    display: inline-block;
-    white-space: nowrap;
-    font-weight: 400;
 }
 
-.submenu ul li:hover,
-.dropdown-content:hover .sub-dropdown>a:hover {
+.dropdown-content li:hover {
     background-color: #fdfffc;
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.submenu ul li:hover .submenu-item,
-.dropdown-content:hover .submenu-item,
-.sub-dropdown>a:hover {
-    color: var(--accecnt-color);
-}
-
-.dropdown-content {
-    position: relative;
-}
-
-.sub-dropdown {
+.dropdown-btn .bx-plus-medical {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: var(--bg-color);
-}
-
-.dropdown-content:hover .sub-dropdown {
-    display: flex;
-    flex-direction: column;
 }
 
 .hamburger-menu {
     display: none;
     flex-direction: column;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -410,8 +385,6 @@ svg {
     height: 4px;
     background-color: var(--primary-color);
     margin: 2.5px 0;
-    /* border-radius: 10px; */
-    
 }
 
 .bar:nth-child(2) {
@@ -1725,4 +1698,40 @@ input::placeholder {
 
 /* ------------------------------------------ 
         ## Message Section End 
+------------------------------------------ */
+
+/* ------------------------------------------ 
+        ## UG Section Start 
+------------------------------------------ */
+
+.ug-section .heading h3 {
+    position: relative;
+}
+
+.ug-section .heading h3::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 48px;
+    background: var(--accecnt-color);
+    width: 11px;
+    height: 5px;
+}
+
+.ug-section .heading h3::after {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 50px;
+    background: var(--secondary-color);
+    width: 85px;
+    height: 2px;
+}
+
+.ug-section .card-img {
+    max-height: 250px;
+}
+
+/* ------------------------------------------ 
+        ## UG Section End 
 ------------------------------------------ */
