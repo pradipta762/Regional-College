@@ -23,10 +23,10 @@ dropdowns.forEach(dropdown => {
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     loop: true,
-    autoplay: {
-        delay: 5500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5500,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

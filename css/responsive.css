@@ -185,8 +185,30 @@
         height: 70vh;
     }
 
+    .dark-overlay {
+    background: linear-gradient(260deg, rgba(19, 24, 28, 0.25) -20%, var(--black-900) 100%);
+    }
+
+    .mob-slider-img {
+        display: block;
+        object-position: top left;
+    }
+
+    .desktop-slider-img {
+        display: none;
+    }
+
     .slide .slider-img {
-        object-position: 80% 20%;
+        object-position: center;
+    }
+
+    .slide .slider-img:nth-child(1) {
+        object-position: top left;
+    }
+
+    .slide .slider-img:nth-child(4) {
+        object-position: center;
+        object-fit: cover;
     }
     
     .slide .slider-data {
