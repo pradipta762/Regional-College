@@ -420,7 +420,7 @@ svg {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 50% 30%;
+    object-position: 50% 15%;
     position: relative;
 }
 
