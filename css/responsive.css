@@ -202,12 +202,8 @@
         object-position: center;
     }
 
-    .slide .slider-img:nth-child(1) {
-        object-position: top left;
-    }
-
-    .slide .slider-img:nth-child(4) {
-        object-position: center;
+    .slide .slider-img:nth-last-child(2) {
+        object-position: right;
         object-fit: cover;
     }
     
