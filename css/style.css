@@ -1815,8 +1815,8 @@ figcaption {
 }
 
 .video-gallery iframe {
-    width: 380px;
-    height: 270px;
+    width: 100%;
+    height: 250px;
 }
 /* ------------------------------------------ 
         ## Photo-Gallery Section End 
