@@ -429,7 +429,7 @@ svg {
 }
 
 .dark-overlay {
-    background: linear-gradient(260deg, rgba(19, 24, 28, 0.25) 10%, var(--black-900) 150%);
+    background: linear-gradient(260deg, rgba(19, 24, 28, 0.25) 10%, var(--black-900) 90%);
     position: absolute;
     inset: 0;
 }
@@ -447,7 +447,7 @@ svg {
 }
 
 .slider-data h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
