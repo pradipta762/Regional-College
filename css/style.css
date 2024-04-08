@@ -80,7 +80,7 @@ body {
 
 /* Set core body defaults */
 body {
-    text-rendering: optimizeSpeed;
+    text-rendering: auto;
     line-height: 1.5;
     /* background-color: var(--bg-color); */
 }
@@ -444,6 +444,12 @@ svg {
     left: 0;
     text-align: left;
     padding: 0 2rem;
+}
+
+.slider-data h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
 }
 
 .slider-data h2 {
