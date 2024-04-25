@@ -1,3 +1,9 @@
+// Preloader Section
+let loader = document.querySelector(".preloader");
+    window.addEventListener("load", () => {
+    loader.style.display = "none";
+})
+
 // Navigation Section
 
 document.addEventListener('DOMContentLoaded', function () {

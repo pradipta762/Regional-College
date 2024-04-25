@@ -215,6 +215,32 @@ svg {
 
 
 /* ----------------------------------------------
+        ## Preloader Section Start
+---------------------------------------------- */
+
+.preloader {
+    background: var(--bg-color);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* ----------------------------------------------
+        ## Preloader Section End
+---------------------------------------------- */
+
+
+/* ----------------------------------------------
         ## Upper Nav bar Start
 ---------------------------------------------- */
 
