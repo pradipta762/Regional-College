@@ -158,19 +158,25 @@
     }
 
     .upper-nav-bar::after {
-        width: 58%;
-    }
-
-    .upper-nav-wrapper {
-        justify-content: center;
+        width: 60%;
     }
 
     .nav-email {
         display: none;
     }
 
-    .upper-nav-right {
+    .nav-phn {
+        display: inline;
         width: 100%;
+        margin-left: 10px;
+    }
+
+    .nav-login {
+        display: none;
+    }
+
+    .upper-nav-right {
+        width: 50%;
         justify-content: space-around;
     }
 
