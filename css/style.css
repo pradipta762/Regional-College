@@ -1508,6 +1508,16 @@ input::placeholder {
     box-shadow: 0 0 10px var(--black-100);
 }
 
+.profile .img-container {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile .img-container img {
+    height: 100%;
+}
+
 .profile-details {
     margin-top: 1rem;
 }
